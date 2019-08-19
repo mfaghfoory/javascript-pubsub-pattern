@@ -12,8 +12,8 @@ function eventHandler1(data){
 function eventHandler2(data){
   console.log("event-2 -> " + data);
 }
-PubSub.subscribe("event-1", eventHandler1);
-PubSub.subscribe("event-2", eventHandler2);
-PubSub.publish("event-1", "data 1");
-PubSub.publish("event-2", "data 2");
+pubsub.subscribe("event-1", eventHandler1);
+pubsub.subscribe("event-2", eventHandler2);
+pubsub.publish("event-1", "data 1");
+pubsub.publish("event-2", "data 2");
 ```
